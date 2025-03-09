@@ -8,10 +8,9 @@ const app = express();
 app.use(cors());
 app.use(express.json()); //middleware pour traiter les requêtes JSON
 
-// Connexion à MongoDB
+// cnnx
 connectDB();
-
-// Routes
+//pour routes
 app.use("/api/auth", authRoutes);
 
 const PORT = process.env.PORT || 5000;
